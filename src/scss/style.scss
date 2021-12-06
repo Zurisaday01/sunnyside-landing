@@ -1,0 +1,56 @@
+// NORMALIZE -----------------
+@import 'normalize';
+
+// ---------------------------
+// # ABSTRACTS ---------------
+// ---------------------------
+
+// FUNCTIONS ---------
+@import './abstracts/functions';
+// MEDIA QUERIES -----
+@import './abstracts/include-media';
+// MIXINS ------------
+@import './abstracts/mixins';
+// VARIABLES ---------
+@import './abstracts/variables';
+
+// ---------------------------
+// # BASE --------------------
+// ---------------------------
+
+// ANIMATIONS ---------
+@import './base/animations';
+// BASE ---------------
+@import './base/base';
+// TYPOGRAPHY ---------
+@import './base/typography';
+// UTILITIES ----------
+@import './base/utilities';
+
+// ---------------------------
+// # COMPONENTS --------------
+// ---------------------------
+@import './components/btn';
+@import './components/info';
+@import './components/logo';
+@import './components/review';
+@import './components/social';
+@import './components/testimonials';
+
+// ---------------------------
+// # LAYOUT ------------------
+// ---------------------------
+
+// FOOTER ---------
+@import './layout/footer';
+// HEADER ---------
+@import './layout/header';
+// NAVIGATION -----
+@import './layout/navigation';
+
+// ---------------------------
+// # PAGES -------------------
+// ---------------------------
+
+// HOME ---------
+@import './pages/home';

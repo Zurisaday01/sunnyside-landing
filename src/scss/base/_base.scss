@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; //10px
+}
+
+body {
+	@include font-family(body);
+	@include font-size(omega);
+	@include font-weight(a);
+	color: color(neutral, a);
+	line-height: 1.7;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 100vh repeat(3, 70vh) min-content 70vh max-content;
+
+	@include respond(maiz) {
+		grid-template-rows: 80vh repeat(5, min-content) max-content;
+	}
+}

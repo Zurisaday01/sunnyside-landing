@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+$breakpoints: (
+	'avena': (
+		max-width: 72.8125em,
+	),
+	//1165px
+	'cebada':
+		(
+			max-width: 65em,
+		),
+	//1040px
+	'maiz':
+		(
+			max-width: 52.5em,
+		),
+	//840px
+	'amaranto':
+		(
+			max-width: 37.5em,
+		),
+	//600px
+) !default;
+
+@mixin respond($bp) {
+	$value: map-get($breakpoints, $bp);
+
+	@if $value != null {
+		@media only screen and #{inspect(map-get($breakpoints, $bp))} {
+			@content;
+		}
+	} @else {
+		@warn "Desafortunadamente, la clave no se encuentra en el mapa`#{$breakpoints}`. "
+        + "Por favor asegurese de que la clave se encuentre en el mapa `$breakpoints`";
+	}
+}

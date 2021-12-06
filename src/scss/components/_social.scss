@@ -1,0 +1,12 @@
+.social {
+	display: flex;
+	gap: 2.5rem;
+
+	&__icon {
+		cursor: pointer;
+		transition: all 0.4s;
+		&:hover {
+			filter: brightness(0) invert(1);
+		}
+	}
+}

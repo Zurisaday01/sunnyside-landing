@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Sunnyside agency landing page</title>
+
+		<!-- FONT FAMILY -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- MY STYLES -->
+		<link rel="stylesheet" href="./style.css" />
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<script src="./main.js" defer></script>
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body class="container">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="left">
+				<img class="logo logo--header" src="./logo.svg" alt="logo" />
+			</div>
+			<!-- NAVIGATION -->
+			<nav class="navigation" id="nav">
+				<ul class="navigation__list" id="nav-menu">
+					<li class="navigation__item">
+						<a href="#about" class="navigation__link">About</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#services" class="navigation__link">Services</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#proyects" class="navigation__link">Projects</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__link btn btn--primary">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<btn class="header__toggle" id="nav-toggle">
+				<img src="./icon-hamburger.svg" alt="hamburger" />
+			</btn>
+		</header>
+		<!-- HERO -->
+
+		<div class="hero">
+			<div class="hero__content">
+				<h1 class="heading heading--primary">We are creatives</h1>
+				<a href="#about" id="hero-arrow">
+					<img
+						class="hero__arrow"
+						src="./icon-arrow-down.svg"
+						alt="arrow down"
+					/>
+				</a>
+			</div>
+		</div>
+
+		<!-- SECTION BRAND -->
+		<section class="section section--main section--brand" id="about">
+			<div class="section__content section__content--change">
+				<h2 class="heading heading--secondary">Transform your brand</h2>
+				<p class="paragraph">
+					We are a full-service creative agency specializing in helping brands
+					grow fast. Engage your clients through compelling visuals that do most
+					of the marketing for you.
+				</p>
+				<a href="" class="btn btn--secondary btn--brand">Learn more</a>
+			</div>
+			<div class="section__resource">
+				<img src="./image-transform.jpg" alt="egg" class="section__photo" />
+			</div>
+		</section>
+
+		<!-- SECTION AUDIENCE -->
+		<section class="section section--main section--audience">
+			<div class="section__resource">
+				<img src="./image-stand-out.jpg" alt="glass" class="section__photo" />
+			</div>
+			<div class="section__content">
+				<h2 class="heading heading--secondary">
+					Stand out to the right audience
+				</h2>
+				<p class="paragraph">
+					Using a collaborative formula of designers, researchers,
+					photographers, videographers, and copywriters, we’ll build and extend
+					your brand in digital places.
+				</p>
+				<a href="" class="btn btn--secondary btn--audience">Learn more</a>
+			</div>
+		</section>
+
+		<!-- SECTION DESCRIPTION -->
+		<section class="section section--description" id="services">
+			<div class="section__resource section__resource--info">
+				<img
+					src="./image-graphic-design.jpg"
+					alt="cherry"
+					class="section__photo"
+				/>
+				<div class="info">
+					<h3 class="heading heading--third">Graphic design</h3>
+					<p class="info__paragraph">
+						Great design makes you memorable. We deliver artwork that
+						underscores your brand message and captures potential clients’
+						attention.
+					</p>
+				</div>
+			</div>
+			<div class="section__resource section__resource--info">
+				<img
+					src="./image-photography.jpg"
+					alt="orange"
+					class="section__photo"
+				/>
+				<div class="info">
+					<h3 class="heading heading--third">Photography</h3>
+					<p class="info__paragraph">
+						Increase your credibility by getting the most stunning, high-quality
+						photos that improve your business image.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- TESTIMOMIALS -->
+		<div class="testimonials">
+			<h2 class="heading heading--testimonials">Client testimonials</h2>
+			<div class="testimonials__content">
+				<div class="review">
+					<div class="review__box">
+						<img src="./image-emily.jpg" alt="Emily" class="review__photo" />
+					</div>
+
+					<blockquote class="paragraph">
+						We put our trust in Sunnyside and they delivered, making sure our
+						needs were met and deadlines were always hit.
+					</blockquote>
+					<div class="review__author">
+						<span class="review__name">Emily R.</span>
+						<span class="review__job">Marketing Director</span>
+					</div>
+				</div>
+				<div class="review">
+					<div class="review__box">
+						<img src="./image-thomas.jpg" alt="Emily" class="review__photo" />
+					</div>
+
+					<blockquote class="paragraph">
+						Sunnyside’s enthusiasm coupled with their keen interest in our
+						brand’s success made it a satisfying and enjoyable experience.
+					</blockquote>
+					<div class="review__author">
+						<span class="review__name">Thomas S.</span>
+						<span class="review__job">Chief Operating Officer</span>
+					</div>
+				</div>
+				<div class="review">
+					<div class="review__box">
+						<img src="./image-jennie.jpg" alt="Emily" class="review__photo" />
+					</div>
+
+					<blockquote class="paragraph">
+						Incredible end result! Our sales increased over 400% when we worked
+						with Sunnyside. Highly recommended!
+					</blockquote>
+					<div class="review__author">
+						<span class="review__name">Jennie F.</span>
+						<span class="review__job">Business Owner</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SECTION IMAGES -->
+		<section class="section section--images" id="proyects">
+			<img
+				src="./image-gallery-milkbottles.jpg"
+				alt="milkbottles"
+				class="section__photo"
+			/>
+			<img
+				src="./image-gallery-orange.jpg"
+				alt="orange gallery"
+				class="section__photo"
+			/>
+			<img src="./image-gallery-cone.jpg" alt="cone" class="section__photo" />
+
+			<img
+				src="./image-gallery-sugarcubes.jpg"
+				alt="sugarcubes"
+				class="section__photo"
+			/>
+		</section>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<img src="./logo.svg" alt="logo footer" class="logo--footer" />
+
+			<nav class="footer__nav">
+				<ul class="navigation__list footer__list">
+					<li class="navigation__item">
+						<a href="#about" class="navigation__link footer__link">About</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#services" class="navigation__link footer__link"
+							>Services</a
+						>
+					</li>
+					<li class="navigation__item">
+						<a href="#proyects" class="navigation__link footer__link"
+							>Projects</a
+						>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="social mt-m">
+				<div class="social__box">
+					<img src="./icon-facebook.svg" alt="facebook" class="social__icon" />
+				</div>
+				<div class="social__box">
+					<img
+						src="./icon-instagram.svg"
+						alt="instagram"
+						class="social__icon"
+					/>
+				</div>
+				<div class="social__box">
+					<img src="./icon-twitter.svg" alt="twitter" class="social__icon" />
+				</div>
+				<div class="social__box">
+					<img
+						src="./icon-pinterest.svg"
+						alt="pinterest"
+						class="social__icon"
+					/>
+				</div>
+			</div>
+		</footer>
+
+		<!--  -->
+
+		<!-- 
+
+
+
+  
+
+
+  
+  
+
+  About
+  Services
+  Projects
+  Contact
+ -->
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+</html>

@@ -1,0 +1,31 @@
+.heading {
+	@include font-family(heading);
+	line-height: 1.2;
+	&--primary {
+		text-transform: uppercase;
+		color: color(neutral, e);
+		animation: up 2s ease-in;
+		@include font-size(alfa);
+		letter-spacing: 1rem;
+	}
+
+	&--secondary {
+		@include font-size(beta);
+		font-weight: 900;
+	}
+
+	&--third {
+		font-size: 3rem;
+	}
+
+	&--testimonials {
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		color: color(neutral, d);
+		@include font-size(omega);
+	}
+}
+
+.paragraph {
+	color: color(neutral, c);
+}

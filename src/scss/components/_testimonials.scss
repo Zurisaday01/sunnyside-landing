@@ -1,0 +1,25 @@
+.testimonials {
+	padding: 15rem 0rem;
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+	align-items: center;
+	text-align: center;
+
+	&__content {
+		display: flex;
+		width: 75vw;
+		gap: 3rem;
+		justify-content: space-between;
+
+		@include respond(maiz) {
+			flex-direction: column;
+			align-items: center;
+			gap: 6rem;
+		}
+	}
+
+	@include respond(maiz) {
+		padding: 7rem 0rem;
+	}
+}

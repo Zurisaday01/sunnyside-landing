@@ -1,0 +1,96 @@
+.hero {
+	background: url(image-header.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__content {
+		position: absolute;
+		width: 100%;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+		text-align: center;
+	}
+
+	&__arrow {
+		width: 3.7rem;
+		cursor: pointer;
+		animation: upDown 2s infinite;
+
+		@include respond(cebada) {
+			width: 3rem;
+		}
+	}
+}
+
+.section {
+	&--main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100%;
+		@include respond(maiz) {
+			grid-template-columns: 100%;
+			grid-template-rows: 40vh 60vh;
+			text-align: center;
+		}
+		// @include respond(maiz) {
+		// 	grid-template-rows: repeat(2, 60vh);
+		// }
+	}
+
+	&--description {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100%;
+		@include respond(maiz) {
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(2, 80vh);
+			text-align: center;
+		}
+	}
+
+	&--images {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 100%;
+		@include respond(maiz) {
+			height: 100%;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+		}
+	}
+
+	&__content {
+		padding: 8vw 9vw;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		justify-content: center;
+
+		@include respond(maiz) {
+			align-items: center;
+			&--change {
+				grid-row: 2 / -1;
+			}
+		}
+	}
+	&__resource {
+		width: 100%;
+
+		&--info {
+			position: relative;
+		}
+	}
+
+	&__photo {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}

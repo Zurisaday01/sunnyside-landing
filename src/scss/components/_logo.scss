@@ -1,0 +1,13 @@
+.logo {
+	&--header {
+		height: 3rem;
+		@include respond(maiz) {
+			height: 2.5rem;
+		}
+	}
+	&--footer {
+		height: 3rem;
+		filter: invert(51%) sepia(22%) saturate(736%) hue-rotate(118deg)
+			brightness(90%) contrast(92%);
+	}
+}

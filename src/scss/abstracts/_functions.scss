@@ -1,0 +1,30 @@
+// --------------------------------
+// Get color ----------------------
+// --------------------------------
+@function color($el, $var) {
+	@return map-get(map-get($color, $el), $var);
+}
+
+// ---------------------------------
+// Get font-family -----------------
+/// Use at [@mixin font-family] ----
+// ---------------------------------
+@function get-font-family($el) {
+	@return map-get($font__family, $el);
+}
+
+// ---------------------------------
+// Get font-size -------------------
+/// Use at [@mixin font-size] ----
+// ---------------------------------
+@function get-font-size($el) {
+	@return map-get($font__size, $el);
+}
+
+// ---------------------------------
+// Get font-weight -----------------
+/// Use at [@mixin font-weight] ----
+// ---------------------------------
+@function get-font-weight($el) {
+	@return map-get($font__weight, $el);
+}

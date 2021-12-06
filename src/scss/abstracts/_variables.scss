@@ -1,0 +1,54 @@
+// ------------------
+// COLORS -----------
+// ------------------
+$color: (
+	primary: (
+		a: #fe7867,
+		b: #fad400,
+		c: #25564b,
+		d: #19536b,
+		e: #458c7e,
+		f: #8ad2c4,
+	),
+	neutral: (
+		a: #23303e,
+		b: #5a636c,
+		c: #818498,
+		d: #a7abae,
+		e: #ffffff,
+	),
+);
+
+// ------------------
+// FONT FAMILY ------
+// ------------------
+$font__family: (
+	heading: (
+		'Fraunces',
+		serif,
+	),
+	body: (
+		'Barlow',
+		sans-serif,
+	),
+);
+
+// ------------------
+// FONT SIZE --------
+// ------------------
+$font__size: (
+	alfa: clamp(3.8rem, 5vw, 6rem),
+	beta: clamp(3rem, 5vw, 4.5rem),
+	omega: 1.8rem,
+	//body
+	delta: 1.5rem,
+);
+
+// ------------------
+// FONT WEIGHTS --------
+// ------------------
+$font__weight: (
+	a: 600,
+	b: 700,
+	c: 900,
+);

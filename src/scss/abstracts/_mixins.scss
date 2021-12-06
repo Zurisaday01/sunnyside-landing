@@ -1,0 +1,14 @@
+// --------------------------------
+@mixin font-family($el) {
+	font-family: get-font-family($el);
+}
+
+// --------------------------------
+@mixin font-size($el) {
+	font-size: get-font-size($el);
+}
+
+// --------------------------------
+@mixin font-weight($el) {
+	font-weight: get-font-weight($el);
+}
