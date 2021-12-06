@@ -4,7 +4,9 @@
 const navEl = document.querySelector('#nav');
 const navMenu = document.querySelector('#nav-menu');
 const navToggle = document.querySelector('#nav-toggle');
-const navLinks = document.querySelectorAll('.navigation__link');
+const navLinks = document.querySelectorAll(
+	'.navigation__link:not(.footer__link)'
+);
 const heroArrow = document.querySelector('#hero-arrow');
 // sticky
 const headerEl = document.querySelector('.header');
